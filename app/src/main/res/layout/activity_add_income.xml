@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddIncome">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView2"
+        android:layout_width="414dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/teal_201"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="71dp"
+            android:layout_height="55dp"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/textView84"
+            android:layout_width="236dp"
+            android:layout_height="match_parent"
+            android:gravity="clip_horizontal|center"
+            android:paddingStart="20dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/income_"
+            android:textColor="#F8FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="356dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/material_dynamic_primary50"
+        android:backgroundTint="@color/material_dynamic_primary50"
+        android:gravity="center"
+        android:text="@string/income_type"
+        android:textColor="@color/White"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView55" />
+
+    <ImageView
+        android:id="@+id/imageView55"
+        android:layout_width="286dp"
+        android:layout_height="201dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigationView2"
+        app:layout_constraintVertical_bias="0.028"
+        app:srcCompat="@drawable/saving" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName9"
+        android:layout_width="318dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/type_1"
+        android:inputType="textPersonName"
+        android:text="type"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView68"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <TextView
+        android:id="@+id/textView94"
+        android:layout_width="356dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/material_dynamic_primary50"
+        android:gravity="center"
+        android:text="Add your amount"
+        android:textColor="@color/White"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName11"
+        android:layout_width="318dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/add_amount"
+        android:inputType="textPersonName"
+        android:text="@string/add_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView94" />
+
+    <ImageView
+        android:id="@+id/imageView63"
+        android:layout_width="62dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView94"
+        app:layout_constraintVertical_bias="0.574"
+        app:srcCompat="@drawable/ic_baseline_calculate_24" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="202dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/teal_201"
+        android:text="@string/add_1"
+        android:textColor="@color/White"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
